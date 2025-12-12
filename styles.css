@@ -1,0 +1,154 @@
+body{
+    background: #F0EDDB;
+}
+
+.entrada{
+    font-size: 30px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 200px;
+}
+
+.btn-proximo{
+  height: 100px;
+  width: 300px;
+  margin-top: 60px;
+  margin-right: 15px;
+  margin-left: 20px;
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 10%) 0 12px 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+
+.btn-proximo:hover {
+  letter-spacing: 3px;
+  background-color: #F0EEEA;
+  color: #0D0E0E(0, 0%, 100%);
+  box-shadow: white 0px 7px 29px 0px;
+}
+
+.btn-proximo:active {
+  letter-spacing: 3px;
+  background-color: #F0EEEA;
+  color: #0D0E0E(0, 0%, 100%);
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.pacotes{
+    display: flex;    
+}
+
+.tipo-pacote{
+    font-size: 35px;   
+    text-align: center;
+}
+
+.pacote{
+    font-size: 25px;
+    background: #F8FBF8;
+    height: 300px;
+    width: 275px;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: rgb(0 0 0 / 20%) 20px 15px 20px;
+}
+
+.valor{
+    text-align: center;
+}
+
+.ensaio{
+    text-align: center;
+}
+
+ .passo {
+        display: none;
+    }
+    
+    .passo.ativo{
+        display: block;
+    }
+
+ /*deixa as imagens sem as coisas do instagram*/ 
+ .insta-wrapper {
+      position: relative;
+      width: 260px;
+      height: 380px;
+      overflow: hidden; 
+}
+
+.insta-wrapper iframe {
+    transform: scale(0.65);     /* diminui a imagem */
+    transform-origin: top left;
+    width: 200% !important;
+    height: 200% !important;
+    border: 0;
+}
+
+  .insta-mask {
+     position: absolute;
+     left: 0;
+     width: 270px;
+     height: 40px;
+     z-index: 10;
+     background: #F0EDDB; 
+}
+
+   .insta-mask.top {
+     top: 0px; 
+} 
+
+   .insta-mask.bottom {
+     bottom: 0;
+     height: 0px; 
+} 
+
+   .insta-mask-left, 
+   .insta-mask-right {
+     position: absolute;
+     top: 110px;
+     height: 0px;
+     width: 0px;
+     background: #F0EDDB;
+     z-index: 20; 
+} 
+
+   .insta-mask-left {
+     left: 0; 
+} 
+
+   .insta-mask-right {
+     right: 0;
+}
+
+   .insta-blocker {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 9999;
+     background: transparent; 
+} 
+
+  .insta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 15px;
+    justify-items: center;
+}
